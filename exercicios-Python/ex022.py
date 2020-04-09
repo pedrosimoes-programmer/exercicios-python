@@ -1,0 +1,8 @@
+nomeCompleto = input('Digite seu nome completo: ')
+dividido = nomeCompleto.split()
+semespaços = nomeCompleto.split()
+semespaços = ''.join(semespaços)
+print('O seu nome completo em maiúsculo: {}'.format(nomeCompleto.upper()))
+print('O seu nome completo em minúsculo: {}'.format(nomeCompleto.lower()))
+print('Sem considerar espaços, no total o seu nome contém: {} letras'.format(len(semespaços)))
+print('O seu primeiro nome é {} e contém: {} letras'.format(dividido[0], len(dividido[0])))
