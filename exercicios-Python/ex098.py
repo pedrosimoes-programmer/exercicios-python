@@ -2,7 +2,6 @@ from time import sleep
 
 
 def contador(inicio, fim, passo):
-
     print('=' * 20)
     print(f'Contagem de {inicio} até {fim}, de {passo} em {passo}')
     print('=' * 20)
