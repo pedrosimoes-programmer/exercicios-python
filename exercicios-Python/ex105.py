@@ -20,8 +20,8 @@ def notas(*notes, sit=False):
             if dicionario['notas'][cont] < menorNota:
                 menorNota = dicionario['notas'][cont]
         cont += 1
-    dicionario['maior'] = maiorNota  # PODERIA TER USADO O PARÂMETRO MAX(notes)
-    dicionario['menor'] = menorNota  # PODERIA TER USADO O PARÂMETRO MIN(notes)
+    dicionario['maior'] = maiorNota  # PODERIA TER USADO O MÉTODO MAX(notes)
+    dicionario['menor'] = menorNota  # PODERIA TER USADO O MÉTODO MIN(notes)
     somaNotas = sum(dicionario['notas'])
     dicionario['média'] = somaNotas / dicionario['total']
     if sit == True:     #OPCIONAL (RETIRAR CASO NÃO HOUVER AO FINAL DA FUNÇÃO!)
