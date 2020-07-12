@@ -1,23 +1,29 @@
-def aumentar(n, taxa):
+def aumentar(n=0, taxa=0):
     res = n + (n * (taxa / 100))
     return res
 
 
-def diminuir(n, taxa):
+def diminuir(n=0, taxa=0):
     res = n - (n * (taxa / 100))
     return res
 
 
-def dobro(n):
+def dobro(n=0):
     res = n * 2
     return res
 
 
-def metade(n):
+def metade(n=0):
     res = n / 2
     return res
 
-def moeda(n):
-    n = str(n)
-    n = 'R$' + n
-    return n
+
+def moeda(n=0, moeda='R$'):
+    return f'{moeda}{n:.2f}'.replace('.', ',')
+
+    
+#def moeda(n=0):
+#    n = str(n)
+#    n = 'R$' + n
+#    nFormatado = n.replace('.', ',0')
+#    return nFormatado
